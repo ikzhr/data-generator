@@ -1,0 +1,27 @@
+<schema>
+    <table name="sampleA" _limit="1000">
+        <column type="char(10)" pkey="1">hotel_cd</column>
+        <column type="char(11)" pkey="1">plan_cd</column>
+        <column type="char(2)" pkey="1">room_cd</column>
+        <column type="date" pkey="1">use_date</column>
+        <column type="varchar(20)">plan_name</column>
+        <column type="text">plan_detail</column>
+        <column type="char(2)">plan_type</column>
+        <column type="int4">price</column>
+        <column type="int2">tax</column>
+        <column type="char(5)" _gtype="time">checkin_time</column>
+        <column type="timestamp">update_time</column>
+        <!--
+        <column type="int4">dummy_num</column>
+        -->
+        <column type="boolean">deleted</column>
+    </table>
+    <table name="sampleB">
+        <column type="char(10)" pkey="1">hotel_cd</column>
+        <column type="char(2)">hotel_type</column>
+        <!--
+        <column type="date">update_date</column>
+        <column type="boolean">deleted</column>
+        -->
+    </table>
+</schema>

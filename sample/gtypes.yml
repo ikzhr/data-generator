@@ -1,0 +1,79 @@
+gtypes:
+    - 
+        name: hotel_cd
+        dbtype: char(8)
+        num: 100
+    - 
+        name: plan_cd
+        dbtype: char(10)
+        num: 10
+    - 
+        name: use_date
+        dbtype: date
+        method: range
+        timefmt: "2006-01-02"
+        range:
+          min: "2018-01-01"
+          max: "2018-03-31"
+        num: 30
+    - 
+        name: update_date
+        dbtype: date
+        method: range
+        timefmt: "2006-01-02"
+        range:
+          min: "2018-01-01"
+          max: "2018-12-31"
+    - 
+        name: time
+        dbtype: time
+        method: range
+        range:
+            min: "15:00"
+            max: "17:00"
+    - 
+        name: update_time
+        dbtype: timestamp
+        method: range
+        range:
+            min: "2018-01-01 00:00:00"
+            max: "2018-01-30 00:00:00"
+    - 
+        name: plan_type
+        dbtype: char(2)
+        method: enum
+        enum:
+            - "00"
+            - "01"
+            - "02"
+            - "03"
+            - "04"
+        weights:
+            - 0.5
+            - 0.2
+            - 0.1
+            - 0.1
+            - 0.1
+    - 
+        name: hotel_type
+        dbtype: char(2)
+        method: enum
+        enum:
+            - "00"
+            - "01"
+            - "02"
+    - 
+        name: price
+        dbtype: int4
+        method: range
+        range:
+          min: 1000
+          max: 99999
+        num: 100
+    - 
+        name: deleted
+        dbtype: boolean
+        num: 2
+        weights:
+            - 0.8
+            - 0.2
