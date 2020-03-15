@@ -1,4 +1,4 @@
-# data_generator_go
+# data-generator
 リレーショナルデータベースのテーブルサンプルデータを生成させるためのツール。
 
 ## 使い方
